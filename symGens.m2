@@ -33,7 +33,7 @@ needsPackage "SpechtModule";
 spechtModuleMult = I -> (
     R := ring I;
     n := dim ring I;
-    r := chainComplex presentation (ring I / I );
+    r := complex presentation (ring I / I );
     -- make symmetric group
     G := for p in partitions(n) list (
         L := gens R;
